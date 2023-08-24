@@ -2,6 +2,12 @@ import React, { useEffect, useState } from "react";
 import { MapContainer, Marker, Pane, Popup, TileLayer } from "react-leaflet";
 import L, { LatLngBounds } from "leaflet";
 
+import faroshData from './assets/rails/Farosh.json'
+import naydraData from './assets/rails/Naydra.json'
+import dinraalData from './assets/rails/Dinraal.json'
+
+import blankIconUrl from './assets/blank.png'
+
 import "leaflet/dist/leaflet.css";
 
 import "./leaflet_tile_workaround.js";
@@ -17,6 +23,13 @@ const crs = L.Util.extend({}, L.CRS.Simple, {
   transformation: new L.Transformation(4 / TILE_SIZE, MAP_SIZE[0] / TILE_SIZE, 4 / TILE_SIZE, MAP_SIZE[1] / TILE_SIZE),
 });
 
+
+const icon = L.icon({
+  iconUrl: blankIconUrl,
+  iconSize: [40, 40],
+  iconAnchor: [20, 20],
+});
+
 const DragonMap: React.FC = () => {
   const [railData, setRailData] = useState<{ [key: string]: Rail }>({});
   const [timeMinutes, setTimeMinutes] = useState<number>(0);
@@ -26,15 +39,10 @@ const DragonMap: React.FC = () => {
   const [mapType, setMapType] = useState("Surface");
 
   useEffect(() => {
-    const dragons = ["Farosh", "Naydra", "Dinraal"];
+    const dragons = {"Farosh": faroshData, "Naydra": naydraData, "Dinraal": dinraalData};
 
-    dragons.forEach((dragon) => {
-      fetch(`/rails/${dragon}.json`)
-        .then((response) => response.json())
-        .then((data) => {
-          setRailData((prevState) => ({ ...prevState, [dragon]: data }));
-        })
-        .catch((error) => console.error(`Error loading rail data for ${dragon}:`, error));
+    Object.entries(dragons).forEach(([dragon, dragonData]) => {
+          setRailData((prevState) => ({ ...prevState, [dragon]: dragonData }));
     });
   }, []);
 
@@ -88,7 +96,7 @@ const DragonMap: React.FC = () => {
             if (pos) {
               const [lat, lng] = convertToMapCoords(pos.x, pos.z);
               return (
-                <Marker key={dragon} position={[lat, lng]}>
+                <Marker key={dragon} position={[lat, lng]} icon={icon}>
                   <Popup autoPan={false}>
                     {dragon} <br />
                     {Math.round(pos.x)} | {-Math.round(pos.z)} | {Math.round(pos.y)}

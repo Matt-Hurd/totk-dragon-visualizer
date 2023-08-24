@@ -1,9 +1,9 @@
 export interface Point {
-  Control0: [number, number, number];
-  Control1: [number, number, number];
+  Control0?: number[];
+  Control1?: number[];
   NextDistance: number;
   PrevDistance: number;
-  Translate: [number, number, number];
+  Translate: number[];
 }
 
 export interface Rail {
