@@ -1,0 +1,166 @@
+{
+  "Dynamic": { "UniqueName": "Rail_For_Dragon_Ice" },
+  "Gyaml": "DragonConnectable",
+  "Hash": "0x565cbd5277e76769",
+  "IsClosed": true,
+  "Name": "DragonConnectable",
+  "Points": [
+    {
+      "Control0": [2061.9392, -352.609, 652.2649],
+      "Control1": [2180.0608, -347.391, 455.85278],
+      "Gyaml": "DragonConnectable",
+      "Hash": "0x3b894947a38fcb4d",
+      "NextDistance": 460.81604,
+      "PrevDistance": 386.59012,
+      "Translate": [2121, -350, 554.05884]
+    },
+    {
+      "Control0": [2342.8374, -339.45972, 278.52942],
+      "Control1": [2617.1626, -340.54028, 317.85022],
+      "Gyaml": "DragonConnectable",
+      "Hash": "0x2247891f5c1d5043",
+      "NextDistance": 516.5399,
+      "PrevDistance": 460.81604,
+      "Translate": [2480, -340, 298.18982]
+    },
+    {
+      "Control0": [2871.774, -330, 515.8146],
+      "Control1": [2968.226, -330, 604.1854],
+      "Gyaml": "DragonConnectable",
+      "Hash": "0x90e137c8320a61d8",
+      "NextDistance": 378.13562,
+      "PrevDistance": 516.5399,
+      "Translate": [2920, -330, 560]
+    },
+    {
+      "Control0": [3109.2058, -333.15063, 760],
+      "Control1": [3180.7942, -366.84937, 960],
+      "Gyaml": "DragonConnectable",
+      "Hash": "0xc3e8b0d1aacec805",
+      "NextDistance": 364.74454,
+      "PrevDistance": 378.13562,
+      "Translate": [3145, -350, 860]
+    },
+    {
+      "Control0": [3145, -440, 1090],
+      "Control1": [3345, -440, 1290],
+      "Gyaml": "DragonConnectable",
+      "Hash": "0x8972cbf4085eae41",
+      "NextDistance": 432.12976,
+      "PrevDistance": 364.74454,
+      "Translate": [3245, -440, 1190]
+    },
+    {
+      "Control0": [3600, -430, 1345],
+      "Control1": [3600, -230, 1345],
+      "Dynamic": { "ASTargetBlendRate": 0.1, "ASTargetBlendTransitionSec": 4 },
+      "Gyaml": "DragonConnectable",
+      "Hash": "0xaa08268eb55e0e7d",
+      "NextDistance": 770.3378,
+      "PrevDistance": 432.12976,
+      "Translate": [3600, -330, 1345]
+    },
+    {
+      "Control0": [3578, 312.5057, 1339],
+      "Control1": [3578, 567.49426, 1339],
+      "Dynamic": { "ASTargetBlendRate": 1, "ASTargetBlendTransitionSec": 4 },
+      "Gyaml": "DragonConnectable",
+      "Hash": "0x39cbf6ffb97f38dc",
+      "NextDistance": 528.3501,
+      "PrevDistance": 770.3378,
+      "Translate": [3578, 440, 1339]
+    },
+    {
+      "Control0": [3900, 553.151, 1471],
+      "Control1": [4100, 546.849, 1671],
+      "Gyaml": "DragonConnectable",
+      "Hash": "0x301b2d3c0257de21",
+      "NextDistance": 478.45938,
+      "PrevDistance": 528.3501,
+      "Translate": [4000, 550, 1571]
+    },
+    {
+      "Control0": [4028.5242, 464.80945, 1863.9565],
+      "Control1": [3931.4758, 335.19055, 2136.0435],
+      "Gyaml": "DragonConnectable",
+      "Hash": "0x742da1f75abf5895",
+      "NextDistance": 837.2299,
+      "PrevDistance": 478.45938,
+      "Translate": [3980, 400, 2000]
+    },
+    {
+      "Control0": [3694.1094, 370, 2638.652],
+      "Control1": [3305.8906, 370, 2661.348],
+      "Gyaml": "DragonConnectable",
+      "Hash": "0x3d1b66565d81ea0b",
+      "NextDistance": 502.44962,
+      "PrevDistance": 837.2299,
+      "Translate": [3500, 370, 2650]
+    },
+    {
+      "Control0": [3100.195, 380.3086, 2633.8672],
+      "Control1": [2899.805, 389.6914, 2598.21],
+      "Gyaml": "DragonConnectable",
+      "Hash": "0x29c813eb6e95fcdf",
+      "NextDistance": 487.90527,
+      "PrevDistance": 502.44962,
+      "Translate": [3000, 385, 2616.0386]
+    },
+    {
+      "Control0": [2689.7798, 396.37305, 2550],
+      "Control1": [2510.2202, 603.62695, 2250],
+      "Gyaml": "DragonConnectable",
+      "Hash": "0x2a9c5e25d7ccc4d1",
+      "NextDistance": 385.2046,
+      "PrevDistance": 487.90527,
+      "Translate": [2600, 500, 2400]
+    },
+    {
+      "Control0": [2500.1326, 614.09326, 2166.8672],
+      "Control1": [2499.8674, 679.4696, 1963.9849],
+      "Gyaml": "DragonConnectable",
+      "Hash": "0x634947939010c1a1",
+      "NextDistance": 410.3241,
+      "PrevDistance": 385.2046,
+      "Translate": [2500, 646.78143, 2065.426]
+    },
+    {
+      "Control0": [2500.0168, 700, 1809.0063],
+      "Control1": [2499.9832, 700, 1510.9937],
+      "Gyaml": "DragonConnectable",
+      "Hash": "0x4ecf6f75e1849e94",
+      "NextDistance": 702.6158,
+      "PrevDistance": 410.3241,
+      "Translate": [2500, 700, 1660]
+    },
+    {
+      "Control0": [2218.395, 583.84424, 1144.58],
+      "Control1": [2101.605, 536.15576, 995.42004],
+      "Gyaml": "DragonConnectable",
+      "Hash": "0x8e5b2b245178c2c1",
+      "NextDistance": 407.1367,
+      "PrevDistance": 702.6158,
+      "Translate": [2160, 560, 1070]
+    },
+    {
+      "Control0": [1973, 500.63882, 857],
+      "Control1": [1973, 139.36118, 857],
+      "Dynamic": { "ASTargetBlendRate": 0.1, "ASTargetBlendTransitionSec": 2 },
+      "Gyaml": "DragonConnectable",
+      "Hash": "0xe4168ec7874c78e8",
+      "NextDistance": 550.04846,
+      "PrevDistance": 407.1367,
+      "Translate": [1973, 320, 857]
+    },
+    {
+      "Control0": [1975, -105, 850],
+      "Control1": [1975, -355, 850],
+      "Dynamic": { "ASTargetBlendRate": 1 },
+      "Gyaml": "DragonConnectable",
+      "Hash": "0xa4096c0028095ee1",
+      "NextDistance": 386.59012,
+      "PrevDistance": 550.04846,
+      "Translate": [1975, -230, 850]
+    }
+  ]
+}
